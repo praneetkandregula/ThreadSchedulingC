@@ -3,11 +3,11 @@
 ## Implementing the functioning of a multi-level feedback queue and wait queue with User Threads
 
 Specs:
-* Possible thread states: READY, RUNNING, WAITING, YIELDED, DONE
-* Scheduler run every 50ms
-* 16 MLFQ queues (Varying levels/priorities)
-* Time slice for each level: (level + 1) * 50ms
-* Starvation is checked after ever 50 time slices (QUANT)
+*  Possible thread states: READY, RUNNING, WAITING, YIELDED, DONE
+*  Scheduler run every 50ms
+*  16 MLFQ queues (Varying levels/priorities)
+*  Time slice for each level: (level + 1) * 50ms
+*  Starvation is checked after ever 50 time slices (QUANT)
 
 Working:
 * The scheduler gets initialised when the first thread is created
